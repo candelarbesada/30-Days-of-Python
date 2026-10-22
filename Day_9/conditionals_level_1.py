@@ -1,4 +1,4 @@
-# Day 9
+# Day 9 - Level 1
 
 age = int(float(input('Enter your age: ')))
 if age >= 18:
@@ -19,3 +19,14 @@ elif my_age < your_age:
 else:
     str = 'We are the same age'
 print(str)
+
+
+number_1 = int(float(input('Enter number one: ')))
+number_2 = int(float(input('Enter number two: ')))
+if number_1 > number_2:
+    print(f"{number_1} is greater than {number_2}")
+elif number_1 < number_2:
+    print(f"{number_1} is smaller than {number_2}")
+else:
+    print(f"{number_1} is equal to {number_2}")
+
