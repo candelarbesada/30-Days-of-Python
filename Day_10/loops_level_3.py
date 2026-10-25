@@ -39,7 +39,7 @@ for l in languages:
         freq[l] += 1
     else:
         freq[l] = 1
-print(f"MOST SPOKEN LANGUAGES: {sorted(freq.items(), key=lambda x: x[1], reverse=True)[:3]}")
+print(f"MOST SPOKEN LANGUAGES: {[f[0] for f in sorted(freq.items(), key=lambda x: x[1], reverse=True)[:3]]}")
 print(f"MOST POPULATED COUNTRIES: {[c['name'] for c in sorted(countries_data, key=lambda x: x['population'], reverse=True)[:10]]}")
 
 
