@@ -28,7 +28,14 @@ print(f"Range: {range_age}")
 print(f"Min - average: {abs(min_age - average)}. Max - average: {max_age - average}")
 
 
-from countries_list import countries
+
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from Data.countries_list import countries
 print(len(countries))
 if len(countries) % 2 != 0:
     print(countries[len(countries) // 2])
