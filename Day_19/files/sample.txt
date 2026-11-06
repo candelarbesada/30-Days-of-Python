@@ -1,0 +1,5 @@
+Hello. This is a sample file
+This txt is going to be tested for a function that calculates the most common words
+Let's see
+This is the 19th day of the course 30 Days of Python
+It has been very enjoyable this far
