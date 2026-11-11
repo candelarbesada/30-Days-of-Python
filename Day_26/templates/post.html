@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="container">
+	<h1>Text Analyzer</h1>
+
+	<form action="{{ url_for('post') }}" method="POST">
+		<div>
+			<textarea
+				rows="15"
+				name="content"
+				placeholder="Write your text here..."
+				required
+			></textarea>
+		</div>
+
+		<div>
+			<input type="submit" class="btn" value="Process Text" />
+		</div>
+	</form>
+</div>
+
+{% endblock %}

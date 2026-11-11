@@ -1,0 +1,233 @@
+/* ================================
+   GENERAL
+================================ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #f8f9fa;
+	color: #333;
+	min-height: 100vh;
+	line-height: 1.6;
+}
+
+/* ================================
+   HEADER / NAVBAR
+================================ */
+
+header {
+	background-color: #ffffff;
+	width: 100%;
+	padding: 20px 0;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 25px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* BRAND */
+
+.brand-name {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: #3778c2;
+	letter-spacing: -1px;
+}
+
+/* NAVIGATION */
+
+.nav-lists {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	list-style: none;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #555;
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+	color: #3778c2;
+}
+
+.nav-link.active {
+	color: #3778c2;
+	font-weight: 600;
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+main {
+	max-width: 1100px;
+	margin: 50px auto;
+	padding: 0 25px;
+	min-height: 70vh;
+}
+
+/* GENERAL HEADINGS */
+
+h1,
+h2,
+h3 {
+	font-family: "Raleway", sans-serif;
+	color: #2c3e50;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 17px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+/* ================================
+   HOME PAGE
+================================ */
+
+.hero {
+	background-color: #3778c2;
+	color: white;
+	padding: 80px 40px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.hero h1 {
+	color: white;
+	font-size: 42px;
+}
+
+.hero p {
+	color: #eaf2fa;
+	font-size: 19px;
+	max-width: 650px;
+	margin: 0 auto 20px;
+}
+
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.about-section {
+	background-color: white;
+	padding: 35px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* ================================
+   POST / TEXT ANALYZER
+================================ */
+
+.post-container {
+	background-color: white;
+	padding: 35px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+textarea {
+	width: 100%;
+	min-height: 180px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	resize: vertical;
+	outline: none;
+}
+
+textarea:focus {
+	border-color: #3778c2;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+button,
+.btn {
+	display: inline-block;
+	background-color: #3778c2;
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 5px;
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	margin-top: 15px;
+}
+
+button:hover,
+.btn:hover {
+	background-color: #285f9e;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 650px) {
+	.menu-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.nav-lists {
+		gap: 20px;
+	}
+
+	.brand-name {
+		font-size: 22px;
+	}
+
+	main {
+		margin: 30px auto;
+	}
+
+	h1 {
+		font-size: 29px;
+	}
+
+	.hero {
+		padding: 50px 20px;
+	}
+}
